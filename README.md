@@ -20,8 +20,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-
+iPhone 6s:
 <img src="https://i.imgur.com/eeP5zwj.gif" width=250><br>
+
+iPad Pro 12.9 inch (3rd generation):
+<img src="https://i.imgur.com/pbkLWhb.gif" width=500><br>
 
 ### Notes
 Figuring out auto layout for the first time is a bit cumbersome and messy but with some trial and error I was able to format elements how I wanted them.
