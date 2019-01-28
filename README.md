@@ -18,7 +18,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="https://i.imgur.com/QVs4aef.gif" width=250><br>
 
 ### Notes
-I ran into an error where, on launching my app, it would just show a blank black screen. I eventually figured out that I had to move the storyboard entry point had to be at the tab controller. Previously, I had it pointed at the navigation controller that I wanted to be initially displayed.
+I ran into an error where, on launching my app, it would just show a blank black screen. I eventually figured out that I had to move the storyboard entry point to the tab controller. Previously, I had it pointed at the navigation controller that I wanted to be initially displayed.
 
 ---
 
