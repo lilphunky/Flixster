@@ -10,12 +10,16 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 #### BONUS
-- [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
+- [x] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
 - [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthough GIF
 
 <img src="https://i.imgur.com/QVs4aef.gif" width=250><br>
+
+Walkthrough of details page from grid view:
+
+<img src="https://i.imgur.com/CLxtBqT.gif" width=250><br>
 
 ### Notes
 I ran into an error where, on launching my app, it would just show a blank black screen. I eventually figured out that I had to move the storyboard entry point to the tab controller. Previously, I had it pointed at the navigation controller that I wanted to be initially displayed.
