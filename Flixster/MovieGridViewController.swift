@@ -15,6 +15,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
     var movies = [[String:Any]]()
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,6 +65,17 @@ class MovieGridViewController: UIViewController, UICollectionViewDelegate, UICol
         
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.item]
+        
+        let detailsVC = segue.destination as! MovieDetailsViewController
+        detailsVC.movie = movie
+        
+        //tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }
