@@ -55,7 +55,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdW-rG-eAM">
-                                                    <rect key="frame" x="146" y="19" width="217" height="29"/>
+                                                    <rect key="frame" x="146" y="19" width="256" height="29"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="3RO-xH-yvh"/>
                                                     </constraints>
@@ -64,7 +64,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWB-2h-WRT">
-                                                    <rect key="frame" x="146" y="56" width="221" height="20.5"/>
+                                                    <rect key="frame" x="146" y="56" width="260" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -202,9 +202,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k55-79-p8s">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k55-79-p8s">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v6J-yY-NYV">
                                     <size key="itemSize" width="174" height="217"/>
@@ -235,6 +234,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k55-79-p8s" firstAttribute="top" secondItem="I84-bQ-Fq0" secondAttribute="top" id="Mg3-Qg-gaq"/>
+                            <constraint firstItem="k55-79-p8s" firstAttribute="leading" secondItem="x8L-dc-mm1" secondAttribute="leading" id="bhe-S8-0qm"/>
+                            <constraint firstItem="x8L-dc-mm1" firstAttribute="bottom" secondItem="k55-79-p8s" secondAttribute="bottom" id="u4J-Yt-SBW"/>
+                            <constraint firstItem="x8L-dc-mm1" firstAttribute="trailing" secondItem="k55-79-p8s" secondAttribute="trailing" id="zC3-Q9-Rgq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x8L-dc-mm1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Superhero" id="bP8-Fv-LUg"/>
